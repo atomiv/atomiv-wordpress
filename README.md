@@ -1,2 +1,2 @@
-# atomiv-wordpress
+# Atomiv WordPress
 Atomiv WordPress
