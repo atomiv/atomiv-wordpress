@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+*:focus {
+    outline: none!important;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+h1, h2 {
+  font-family: 'Catamaran', sans-serif;
+}
+
+h1 {
+  color: #3a3a3a;
+  font-family: "Catamaran", Sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 35px;
+}

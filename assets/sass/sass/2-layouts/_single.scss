@@ -1,0 +1,42 @@
+.atomiv__signle {
+    .signle__content {
+        .content__single__main {
+           box-shadow: 0 0px 7px 0 rgba(0, 0, 0, 0.2); 
+            h1, .single__date {
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+
+            .single__date {
+                color: $dateColor;
+                font-size: $dateSize;
+            }
+
+            .content__text {
+                padding-left: 15px;
+                padding-right: 15px;
+                p {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+    
+        }
+    
+        .single__sidebar {
+            ul {
+                &:first-child {
+                    margin-top: 0;
+                }
+                li { 
+                    a {
+                        font-size: $sidebarSize;
+                        color: $sidebarColor;
+                    }
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,408 @@
+/*=============================================
+=            Colors                  =
+=============================================*/
+/*=============================================
+=            END: Colors                  =
+=============================================*/
+/*=============================================
+=                 Font sizes                 =
+=============================================*/
+/*=============================================
+=                 END: Font sizes                 =
+=============================================*/
+/* BASE STYLES */
+/* FLEX BOX */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+*:focus {
+  outline: none !important; }
+
+img {
+  max-width: 100%;
+  width: 100%; }
+
+h1, h2 {
+  font-family: 'Catamaran', sans-serif; }
+
+h1 {
+  color: #3a3a3a;
+  font-family: "Catamaran", Sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 35px; }
+
+/* LAYOUTS */
+/*=============================================
+=       Inko Versand Basic Framework              =
+=============================================*/
+.grid-1280, .grid-5, .grid-10, .grid-15, .grid-20, .grid-25, .grid-30, .grid-33, .grid-35, .grid-40, .grid-45, .grid-50, .grid-55, .grid-60, .grid-65, .grid-66, .grid-70, .grid-75, .grid-80, .grid-85, .grid-90, .grid-95, .grid-100, .grid-960, .grid-1160 {
+  position: relative; }
+
+/** GLOBAL GRID SIZES **/
+.grid-5 {
+  width: 5%; }
+
+.grid-10 {
+  width: 10%; }
+
+.grid-15 {
+  width: 15%; }
+
+.grid-20 {
+  width: 20%; }
+
+.grid-25 {
+  width: 25%; }
+
+.grid-30 {
+  width: 30%; }
+
+.grid-33 {
+  width: 33.33333%; }
+
+.grid-35 {
+  width: 35%; }
+
+.grid-40 {
+  width: 40%; }
+
+.grid-45 {
+  width: 45%; }
+
+.grid-50 {
+  width: 50%; }
+
+.grid-55 {
+  width: 55%; }
+
+.grid-60 {
+  width: 60%; }
+
+.grid-65 {
+  width: 65%; }
+
+.grid-66 {
+  width: 66.66666%; }
+
+.grid-70 {
+  width: 70%; }
+
+.grid-75 {
+  width: 75%; }
+
+.grid-80 {
+  width: 80%; }
+
+.grid-85 {
+  width: 85%; }
+
+.grid-90 {
+  width: 90%; }
+
+.grid-95 {
+  width: 95%; }
+
+.grid-100 {
+  width: 100%; }
+
+.grid-25-margin {
+  width: 25%;
+  margin: 0 auto; }
+
+.padding-70-50 {
+  padding: 70px 50px; }
+
+section {
+  position: relative; }
+
+.grid-600 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-680 {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-750 {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-800 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-960-32 {
+  max-width: 960px;
+  margin-left: 32.5%;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-960 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-1060 {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-1200 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-1280 {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-1380 {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid-50-percent {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.ai__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ai__wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.ai__sb {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.ai__se {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+
+.ai__sa {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.ai__ac {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ai__ast {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+
+.ai__jcc {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.ai__jce {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.ai__end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.ai__dc {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.order-1 {
+  order: 1; }
+
+.order-0 {
+  order: 0; }
+
+.p-20 {
+  padding: 20px; }
+
+.p-bottom-10 {
+  padding-bottom: 10px; }
+
+.p-bottom-30 {
+  padding-bottom: 30px; }
+
+.p-top-60 {
+  padding-top: 60px; }
+
+.p-top-50 {
+  padding-top: 50px; }
+
+.p-bottom-50 {
+  padding-bottom: 50px; }
+
+.m-top-40 {
+  margin-top: 40px; }
+
+.m-top-100 {
+  margin-top: 100px; }
+
+.m-bottom-100 {
+  margin-bottom: 100px; }
+
+.z-index-100 {
+  z-index: 100; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.mb-0 {
+  margin-bottom: 0 !important; }
+
+.f-dir-column {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.flex-ordinary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.f-align-center {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.display-block {
+  display: block !important; }
+
+.label__animation {
+  margin-bottom: 40px;
+  /* Underline and Placeholder */ }
+  .label__animation input.input__animation,
+  .label__animation textarea.input__animation {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    padding: 10px 0 5px 0;
+    border-radius: 2px;
+    margin: 0;
+    border: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    overflow-x: hidden;
+    /* Hack to make "rows" attribute apply in Firefox. */ }
+  .label__animation input.input__animation + label,
+  .label__animation textarea.input__animation + label {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+    height: 0px; }
+  .label__animation input.input__animation:focus + label,
+  .label__animation textarea.input__animation:focus + label {
+    width: 100%; }
+  .label__animation input.input__animation:focus + label > span,
+  .label__animation input.input__animation:valid + label > span {
+    top: -60px;
+    font-size: 20px;
+    color: #fff; }
+  .label__animation input.input__animation:invalid,
+  .label__animation textarea.input__animation:invalid {
+    box-shadow: none; }
+  .label__animation input.input__animation + label > span,
+  .label__animation textarea.input__animation + label > span {
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #8F8F8F;
+    font-size: 22px;
+    top: -30px;
+    left: 0px;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease; }
+
+.label__animation input.input__animation + label.bind-error {
+  border-top: 1px solid #ff0033; }
+
+.label__animation input.input__animation + label.bind-success {
+  border-top: 1px solid #4BB543; }
+
+.label__animation input.input__animation + label.bind-fill {
+  border-top: 1px solid #fff; }
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1; } }
+
+@keyframes appear {
+  100% {
+    opacity: 1; } }
+
+.atomiv__signle .signle__content .content__single__main {
+  box-shadow: 0 0px 7px 0 rgba(0, 0, 0, 0.2); }
+  .atomiv__signle .signle__content .content__single__main h1, .atomiv__signle .signle__content .content__single__main .single__date {
+    margin-bottom: 15px;
+    margin-top: 15px; }
+  .atomiv__signle .signle__content .content__single__main .single__date {
+    color: #757171;
+    font-size: 13px; }
+  .atomiv__signle .signle__content .content__single__main .content__text {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .atomiv__signle .signle__content .content__single__main .content__text p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.5; }
+
+.atomiv__signle .signle__content .single__sidebar ul:first-child {
+  margin-top: 0; }
+
+.atomiv__signle .signle__content .single__sidebar ul li {
+  margin-bottom: 15px; }
+  .atomiv__signle .signle__content .single__sidebar ul li a {
+    font-size: 18px;
+    color: #0a0a0a; }
