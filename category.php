@@ -6,17 +6,16 @@
 get_header(); ?>
 
 
-<div class="a__content blog blog--category">
+<div class="atomiv blog blog--category">
+
 
 	<div class="grid-1160">
 
-		<h1 class="blog__title"><?php the_title(); ?></h1>
-
 		<?php
 			// Title of the category
-			the_archive_title( '<h1 class="archive">', '</h1>' );
+			the_archive_title( '<h1 class="blog__taxonomy-title">', '</h1>' );
 			// Post category description
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			the_archive_description( '<div class="blog__taxonomy-description">', '</div>' );
 		?>
 
 		<div class="blog__content">
@@ -54,7 +53,7 @@ get_header(); ?>
 					<span class="blog__date"><?php echo get_the_time('d.m.y') ?></span>
 
 					<a href="<?php echo get_the_permalink(); ?>">
-						<h3><?php the_title() ?></h3>
+						<h3 class="blog__single-title"><?php the_title() ?></h3>
 					</a>
 					<!-- get_the_post_thumbnail_url -->
 					<?php get_the_post_thumbnail_url(); ?>
@@ -99,10 +98,10 @@ get_header(); ?>
 
 		<?php get_sidebar(); ?>
 		
-	</div><!-- end grid-1160 -->
+	</div><!-- End: grid-1160 -->
 
 
-</div><!-- End: a__content & blog -->
+</div><!-- End: atomiv & blog -->
 
 
 <?php get_footer();

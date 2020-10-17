@@ -6,7 +6,8 @@
 get_header(); ?>
 
 
-<div class="atomiv blog">
+<div class="atomiv blog blog--archive">
+
 
    <div class="grid-1160">
 
@@ -49,7 +50,7 @@ get_header(); ?>
                <span class="blog__date"><?php echo get_the_time('d.m.y') ?></span>
 
                <a href="<?php echo get_the_permalink(); ?>">
-                  <h3><?php the_title() ?></h3>
+                  <h3 class="blog__single-title"><?php the_title() ?></h3>
                </a>
 
                <div class="blog__content">
@@ -86,7 +87,7 @@ get_header(); ?>
 
       <?php get_sidebar(); ?>
 
-   </div><!-- end grid-1160 -->
+   </div><!-- End: grid-1160 -->
 
 
 </div><!-- End: atomiv & blog -->

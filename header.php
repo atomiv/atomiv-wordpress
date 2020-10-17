@@ -78,8 +78,8 @@
 		<?php
 		$mainNav = array(
 			'theme_location'	=> 'mainNav',
-			'container'			=> 'ul',
-			'menu_class'		=> 'nav'
+			'container'			=> 'nav',
+			'menu_class'		=> 'main-navigation'
 		);
 		wp_nav_menu($mainNav); ?><!-- End: main navigation -->
 

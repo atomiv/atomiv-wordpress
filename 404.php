@@ -3,7 +3,7 @@
 <?php get_header();?>
 
 
-	<div class="a-content">
+	<div class="atomiv">
 	
 		<div class="grid-1160">
 
@@ -22,7 +22,7 @@
 
 		</div><!-- End: .grid-1160 -->
 
-	</div><!-- End: .a-content -->
+	</div><!-- End: .atomiv -->
 
 
 <?php get_footer();?>

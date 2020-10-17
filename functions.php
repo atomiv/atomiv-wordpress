@@ -58,6 +58,7 @@ function atomiv_blog_widgets_init() {
 }
 add_action( 'widgets_init', 'atomiv_blog_widgets_init' );
 
+
 // Single post sidebar
 function custom_post_sidebar_widget() {
     register_sidebar( array(
@@ -82,17 +83,16 @@ add_action( 'widgets_init', 'custom_post_sidebar_widget' );
 	Search function for posts
 ==============================================================*/
 
-function wpshock_search_filter( $query ) {
+function atomiv_search_filter( $query ) {
     if ( $query->is_search ) {
         $query->set( 'post_type', array('post') );
     }
     return $query;
 }
-add_filter('pre_get_posts','wpshock_search_filter');
+add_filter('pre_get_posts','atomiv_search_filter');
 
 
-
-function cf_search_join( $join ) {
+function atomiv_search_join( $join ) {
     global $wpdb;
 
     if ( is_search() ) {    
@@ -101,11 +101,11 @@ function cf_search_join( $join ) {
 
     return $join;
 }
-add_filter('posts_join', 'cf_search_join' );
+add_filter('posts_join', 'atomiv_search_join' );
 
 
 /* Modify the search query with posts_where */
-function cf_search_where( $where ) {
+function atomiv_search_where( $where ) {
     global $pagenow, $wpdb;
 
     if ( is_search() ) {
@@ -116,10 +116,10 @@ function cf_search_where( $where ) {
 
     return $where;
 }
-add_filter( 'posts_where', 'cf_search_where' );
+add_filter( 'posts_where', 'atomiv_search_where' );
 
 /* Prevent duplicates */
-function cf_search_distinct( $where ) {
+function atomiv_search_distinct( $where ) {
     global $wpdb;
 
     if ( is_search() ) {
@@ -128,7 +128,7 @@ function cf_search_distinct( $where ) {
 
     return $where;
 }
-add_filter( 'posts_distinct', 'cf_search_distinct' );
+add_filter( 'posts_distinct', 'atomiv_search_distinct' );
 
 /* =============================================================
 	End: Search function for posts
