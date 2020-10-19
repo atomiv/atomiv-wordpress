@@ -10,11 +10,11 @@
 
 		<div class="atomiv">
 
-			<div class="grid-1160">
+			<div class="grid grid--1160">
 
 				<?php the_content(); ?>
 
-			</div><!-- End: grid-1160 -->
+			</div><!-- End: grid--1160 -->
 
 		</div><!-- End: .atomiv -->
 

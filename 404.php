@@ -5,7 +5,7 @@
 
 	<div class="atomiv">
 	
-		<div class="grid-1160">
+		<div class="grid grid--1160">
 
 			<div class="page-404">
 
@@ -20,7 +20,7 @@
 
 			</div><!-- End: .page-404 -->
 
-		</div><!-- End: .grid-1160 -->
+		</div><!-- End: .grid--1160 -->
 
 	</div><!-- End: .atomiv -->
 

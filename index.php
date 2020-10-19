@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="atomiv blog">
 
 
-	<div class="grid-1160">
+	<div class="grid grid--1160">
 
 		<h1 class="blog__title"><?php the_title(); ?></h1>
 
@@ -20,7 +20,7 @@ get_header(); ?>
 			the_archive_description( '<div class="blog__taxonomy-description">', '</div>' );
 		?>
 
-		<div class="blog__content">
+		<div class="blog__content grid grid--70">
 
 			<ul class="blog__posts">
 				<?php
@@ -47,13 +47,14 @@ get_header(); ?>
 						$posts->the_post();
 				?>
 
-				<li class="blog__article">
+				<li class="article">
 
-					<span class="blog__date"><?php echo get_the_time('d.m.y') ?></span>
+					<span class="article__date"><?php echo get_the_time('d.m.y') ?></span>
 
 					<a href="<?php echo get_the_permalink(); ?>">
-						<h3 class="blog__single-title"><?php the_title() ?></h3>
+						<h3 class="article__title"><?php the_title() ?></h3>
 					</a>
+
 					<!-- get_the_post_thumbnail_url -->
 					<?php get_the_post_thumbnail_url(); ?>
 					<!-- the_post_thumbnail -->
@@ -63,12 +64,12 @@ get_header(); ?>
 						<img alt="" title="" src="<?php get_the_post_thumbnail_url(); ?>">
 					</div>
 
-					<div class="blog__content">
-						<div class="blog__excerpt"><?php the_excerpt(); ?></div>
-						<div class="permalink"><a href="<?php echo get_the_permalink(); ?>">Read More</a></div>
-					</div>
+					<div class="article__content">
+			            <div class="article__excerpt"><?php the_excerpt(); ?></div>
+				        <div class="permalink permalink--article"><a href="<?php echo get_the_permalink(); ?>">Read More</a></div>
+				    </div>
 
-				</li><!-- End: blog__article -->
+				</li><!-- End: article -->
 
 				<?php
 					} // End: while have_posts
@@ -97,7 +98,7 @@ get_header(); ?>
 
 		<?php get_sidebar(); ?>
 		
-	</div><!-- End: grid-1160 -->
+	</div><!-- End: grid--1160 -->
 
 
 </div><!-- End: atomiv & blog -->

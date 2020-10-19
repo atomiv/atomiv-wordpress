@@ -11,11 +11,11 @@ get_header(); ?>
     <?php // A loop that collects data from a post
     while ( have_posts() ) : the_post(); ?>
 
-        <div class="grid-1160">
+        <div class="grid grid--1160">
 
             <main class="single">
 
-                <section class="single__content">
+                <section class="single__content grid grid--70">
 
                     <!-- Title of the post -->
                     <h1 class="single__title"><?php the_title(); ?></h1>
@@ -46,7 +46,7 @@ get_header(); ?>
 
             </main><!-- End: single -->
 
-        </div><!-- End: grid-1160 -->
+        </div><!-- End: grid--1160 -->
 
     <?php  endwhile; // End: while post ?>
 
