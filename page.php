@@ -8,15 +8,15 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 
 
-		<div class="atomiv">
+		<div class="a__content">
 
-			<div class="grid grid--1160">
+			<div class="grid-1160">
 
 				<?php the_content(); ?>
 
-			</div><!-- End: grid--1160 -->
+			</div><!-- end grid-1160 -->
 
-		</div><!-- End: .atomiv -->
+		</div><!-- End: .a__content -->
 
 
 	<?php endwhile; ?>

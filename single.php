@@ -1,57 +1,57 @@
 <?php 
-/*
- * The template shows Single post
- */
 
 get_header(); ?>
+  
+    <div class="atomiv__signle grid-1200">
+
+        <main class="signle__content ai__flex ai__sb">
+
+            <section class="content__single__main grid-70">
+
+                <!-- Thumbnail of post -->
+                <?php the_post_thumbnail(); ?>
+
+                <!-- The date the post was created -->
+                <p class="single__date"><?php echo get_the_date(); ?></p>
+
+                <!-- Title of POST -->
+                <h1><?php the_title(); ?></h1>
+                
+                <section class="content__text">
+
+                    <!-- A loop that collects data from a post.  -->
+                    <?php while ( have_posts() ) : the_post(); ?>
+
+                        <?php the_content(); ?>
+            
+                    <?php  endwhile; ?><!-- End: the loop. -->
+
+                </section><!-- End: content__text -->
+
+            </section><!-- End: content__single__main -->
 
 
-<div class="atomiv atomiv--single">
+            <?php 
+                // If comments are open or we have at least one comment, load up the comment template.
+                // if ( comments_open() || get_comments_number() ) :
+                //     comments_template();
+                // endif; 
+            ?>
 
-    <?php // A loop that collects data from a post
-    while ( have_posts() ) : the_post(); ?>
+            <aside class="single__sidebar grid-25">
+                
+                <!-- Sidebar activation - the sidebar is activated in function.php and this is its "single_post_sidebar" ID which is called for the sidebar to be activated. -->
+                <?php if ( is_active_sidebar( 'single_post_sidebar' ) ) { ?>
+                    <ul id="sidebar">
+                        <?php dynamic_sidebar('single_post_sidebar'); ?>
+                    </ul>
+                <?php } ?>
 
-        <div class="grid grid--1160">
+            </aside><!-- End: signlsingle__sidebare__content -->
 
-            <main class="single">
-
-                <section class="single__content grid grid--70">
-
-                    <!-- Title of the post -->
-                    <h1 class="single__title"><?php the_title(); ?></h1>
-
-                    <?php // check if the post has a Post Thumbnail assigned to it
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail(array('class' => 'single__thumbnail'));
-                    } ?>
-
-                    <!-- The date the post was created -->
-                    <p class="single__date"><?php echo get_the_date(); ?></p>
-
-                    <!-- The post content -->
-                    <?php the_content(); ?>
-
-                </section><!-- End: single__main -->
+        </main><!-- End: signle__content -->
 
 
-                <?php 
-                    // If comments are open or we have at least one comment, load up the comment template.
-                    // if ( comments_open() || get_comments_number() ) :
-                    //     comments_template();
-                    // endif; 
-                ?>
-
-
-                <?php get_sidebar(); ?>
-
-            </main><!-- End: single -->
-
-        </div><!-- End: grid--1160 -->
-
-    <?php  endwhile; // End: while post ?>
-
-
-</div><!-- End: atomiv -->
-
-
+    </div><!-- End: atomiv__signle -->
+  
 <?php get_footer(); ?>

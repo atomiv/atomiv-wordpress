@@ -6,19 +6,20 @@
 get_header(); ?>
 
 
-<div class="atomiv blog blog--category">
+<div class="a__content blog blog--category">
 
+	<div class="grid-1160">
 
-	<div class="grid grid--1160">
+		<h1 class="blog__title"><?php the_title(); ?></h1>
 
 		<?php
 			// Title of the category
-			the_archive_title( '<h1 class="blog__taxonomy-title">', '</h1>' );
+			the_archive_title( '<h1 class="archive">', '</h1>' );
 			// Post category description
-			the_archive_description( '<div class="blog__taxonomy-description">', '</div>' );
+			the_archive_description( '<div class="taxonomy-description">', '</div>' );
 		?>
 
-		<div class="blog__content grid grid--70">
+		<div class="blog__content">
 
 			<ul class="blog__posts">
 				<?php
@@ -48,14 +49,13 @@ get_header(); ?>
 						$postsCat->the_post();
 				?>
 
-				<li class="article">
+				<li class="blog__article">
 
-					<span class="article__date"><?php echo get_the_time('d.m.y') ?></span>
+					<span class="blog__date"><?php echo get_the_time('d.m.y') ?></span>
 
 					<a href="<?php echo get_the_permalink(); ?>">
-						<h3 class="article__title"><?php the_title() ?></h3>
+						<h3><?php the_title() ?></h3>
 					</a>
-
 					<!-- get_the_post_thumbnail_url -->
 					<?php get_the_post_thumbnail_url(); ?>
 					<!-- the_post_thumbnail -->
@@ -65,12 +65,12 @@ get_header(); ?>
 						<img alt="" title="" src="<?php get_the_post_thumbnail_url(); ?>">
 					</div>
 
-					<div class="article__content">
-			            <div class="article__excerpt"><?php the_excerpt(); ?></div>
-				        <div class="permalink permalink--article"><a href="<?php echo get_the_permalink(); ?>">Read More</a></div>
-				    </div>
+					<div class="blog__content">
+						<div class="blog__excerpt"><?php the_excerpt(); ?></div>
+						<div class="permalink"><a href="<?php echo get_the_permalink(); ?>">Read More</a></div>
+					</div>
 
-				</li><!-- End: article -->
+				</li><!-- End: blog__article -->
 
 				<?php
 					} // End: while have_posts
@@ -96,13 +96,14 @@ get_header(); ?>
 
 		</div><!-- End: blog__content -->
 
-
-		<?php get_sidebar(); ?>
+		<aside>
+			<?php dynamic_sidebar( 'blog-sidebar' ); ?>
+		</aside>
 		
-	</div><!-- End: grid--1160 -->
+	</div><!-- end grid-1160 -->
 
 
-</div><!-- End: atomiv & blog -->
+</div><!-- End: a__content & blog -->
 
 
 <?php get_footer();
